@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Button} from './Button';
+import {Button} from './przycisk.js';
 
 class App extends Component {
 
@@ -16,14 +16,17 @@ class App extends Component {
   }
 
   render() {
+
+
     return (
       <div>
         Current count: {this.state.count}
         <hr />
-        <Button sign="+" count={this.state.count} updateCount={this.handleCount.bind(this)} />
         <Button sign="-" count={this.state.count} updateCount={this.handleCount.bind(this)} />
+        <Button sign="+" count={this.state.count} updateCount={this.handleCount.bind(this)} />
       </div>
     );
   }
 }
+
 export default App;
